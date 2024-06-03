@@ -1,0 +1,22 @@
+.container {
+  margin-top: 0.2rem;
+  margin-left: auto; /* Automatically set left margin */
+  margin-right: auto; /* Automatically set right margin */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items vertically and horizontally in the center */
+  gap: 10px; /* Add gap between child elements */
+}
+.customButton {
+  /* Define your custom styles for the button here */
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customButton:hover {
+  background-color: darkorange;
+}

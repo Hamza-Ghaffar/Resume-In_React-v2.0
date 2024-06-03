@@ -1,0 +1,44 @@
+.card {
+  color: white;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 35%, #ffdd1c, #cac48e) border-box;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transform-origin: right bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card:hover {
+  background-color: darkorange;
+}
+
+.categories span {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transform-origin: right bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.categories span:hover {
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 35%, #ffdd1c, #cac48e) border-box;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+.footer {
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 4px;
+  margin-bottom: 8px; /* Adjust as needed */
+}

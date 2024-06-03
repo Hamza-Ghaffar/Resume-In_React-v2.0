@@ -1,0 +1,73 @@
+.container {
+  margin-top: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Arial", sans-serif; /* Use a modern sans-serif font */
+}
+
+.card {
+  border-radius: 0.5rem;
+  width: 1150px;
+  background-color: #f8f9fa; /* Light background color for a modern look */
+  box-shadow: 21px rgba(0, 0, 0, 0.959); /* Soft shadow for depth */
+}
+
+.card-body {
+  display: flex;
+  align-items: flex-start; /* Align items at the start vertically */
+  gap: 20px;
+  padding: 20px;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top; /* Ensure the top part of the image is visible */
+}
+
+.info {
+  flex: 1;
+}
+
+.header {
+  margin-bottom: 1rem;
+  color: #343a40; /* Darker color for contrast */
+  font-weight: bold;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-weight: bold;
+  color: #495057; /* Soft dark color for titles */
+}
+
+.text {
+  display: inline;
+  color: #6c757d; /* Muted color for text */
+}
+
+.customButton {
+  /* Define your custom styles for the button here */
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customButton:hover {
+  background-color: darkorange;
+}
