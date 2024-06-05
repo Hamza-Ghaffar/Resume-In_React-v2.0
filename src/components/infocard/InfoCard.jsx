@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./InfoCard.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const InfoCard = () => {
+  // State variables for name and edit mode
+  const [name, setName] = useState("HAMZA GHAFFAR");
+  const [isEditingName, setIsEditingName] = useState(false);
+
+  // Function to enable name editing
+  const handleEditName = () => {
+    setIsEditingName(true);
+  };
+
+  // Function to save edited name
+  const handleSaveName = () => {
+    setIsEditingName(false);
+    // Additional save logic can be added here
+  };
+
+  // Function to handle 'Enter' key press for saving name
+  const handleKeyPressName = (e) => {
+    if (e.key === "Enter") {
+      handleSaveName();
+    }
+  };
+
   return (
     <div className={styles.container}>
       <div className={`card ${styles.card}`}>
@@ -13,7 +35,25 @@ const InfoCard = () => {
             className={styles.profileImage}
           />
           <div className={styles.info}>
-            <h5 className={`card-header ${styles.header}`}>HAMZA GHAFFAR</h5>
+            <h5 className={`card-header ${styles.header}`}>
+              {isEditingName ? (
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  onKeyPress={handleKeyPressName}
+                />
+              ) : (
+                name
+              )}
+            </h5>
+            <button
+              className={`btn ${styles.customButton}`}
+              onClick={handleEditName}
+            >
+              Edit Name
+            </button>
+
             <div className={styles.section}>
               <span className={`card-title ${styles.title}`}>
                 <i className="fas fa-envelope"></i> Email:
@@ -36,9 +76,6 @@ const InfoCard = () => {
                 Portschach, 9210, Austria
               </span>
             </div>
-            <button className={`btn ${styles.customButton}`} type="submit">
-              Edit
-            </button>
           </div>
         </div>
       </div>
