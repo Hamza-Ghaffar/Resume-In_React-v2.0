@@ -2,7 +2,8 @@
 
 This is a dynamic template for a resume built using React. It fetches data from object arrays using props, making it easy to update and customize.
 
-![React Resume](image.png)
+![React Resume]
+![alt text](ReactReusme2.0-1.png)
 
 ## Features
 
@@ -19,7 +20,7 @@ This is a dynamic template for a resume built using React. It fetches data from 
 ## Usage
 
 1. Start the development server: `npm run dev`
-2. Open your browser and go to `http://localhost:"e.g"`
+2. Open your browser and go to `http://http://localhost:5173/"`
 
 ## Credits
 
