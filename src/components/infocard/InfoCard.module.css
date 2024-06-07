@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-family: "Arial", sans-serif; /* Use a modern sans-serif font */
 }
 
 .card {
@@ -21,14 +20,6 @@
   align-items: flex-start; /* Align items at the start vertically */
   gap: 20px;
   padding: 20px;
-}
-
-.profileImage {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: top; /* Ensure the top part of the image is visible */
 }
 
 .info {

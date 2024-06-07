@@ -19,14 +19,7 @@ const Header = () => {
   return (
     <div>
       {/* Input field for searching */}
-      <input
-        ref={inputRef}
-        onKeyDown={handleSearch}
-        className="form-control me-2"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
+
       {/* Passing handleSearch, text, and inputRef as props to Navbar */}
       <Navbar handleSearch={handleSearch} text={text} inputRef={inputRef} />
     </div>
